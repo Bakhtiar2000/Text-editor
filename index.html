@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aaf233f2c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <section class="w-3/4 mt-10 mx-auto py-5 bg-sky-400
+        drop-shadow-2xl">
+            <h3 class="text-center text-3xl mb-5">My Text Editor</h3>
+            <div class="border-2 border-black p-5 w-3/4 mb-8 mx-auto bg-sky-200 ">
+
+                <div class="flex justify-between">
+                    <div class="flex gap-3">
+                        <i id="bold" class="fa-solid fa-bold hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        <i id="italic" class="fa-solid fa-italic hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        <i id="underline" class="fa-solid fa-underline hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        </div>
+        
+                        <div class="flex gap-3">
+                        <i id="left" class="fa-solid fa-align-left hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        <i id="center" class="fa-solid fa-align-center hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        <i id="right" class="fa-solid fa-align-right hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        <i id="justify" class="fa-solid fa-align-justify hover:bg-blue-400 p-2 mb-2 rounded-md"></i>
+                        </div>
+        
+                        <div class="flex gap-3">
+                        <input id="number" class="w-2/3 py-0.5 mb-5 pl-1" type="number" min="5" max="100" value="5">
+                        <span>aA</span>
+                        <input class="w-2/3" type="color" value="#000000">
+                        </div>
+                </div>
+                <hr class="border border-black mb-5">
+
+                <textarea  id="text-area" class="mx-auto w-full pb-20 px-2"></textarea>
+            </div>
+        </section>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>
